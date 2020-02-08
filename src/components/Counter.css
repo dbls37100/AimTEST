@@ -1,8 +1,6 @@
 body {
     cursor: url("./cursor.png"), auto;
     background-color: #22031F;
-    width: 100vw;
-    height: 100vh;
     color: white;
     max-width: 100vw;
 }
@@ -33,6 +31,7 @@ h2 {
 
 .Controle-size {
     width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
 }
