@@ -1,11 +1,11 @@
 import React from 'react';
-import Counter from './components/Counter';
+import Game from './components/game/Game.js';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Counter />
+      <Game />
     </div>
   );
 }

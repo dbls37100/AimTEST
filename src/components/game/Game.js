@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import './Counter.css';
-import cible from './cible.png';
+import './Game.css';
+import cible from '../img/cible.png';
 import UIfx from 'uifx';
-import shootmp3 from "./shoot.mp3"
+import shootmp3 from "../sound/shoot.mp3"
 
 const Counter = () => {
 

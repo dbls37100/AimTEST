@@ -1,8 +1,9 @@
 body {
-    cursor: url("./cursor.png"), auto;
+    cursor: url("../img/cursor.png"), auto;
     background-color: #22031F;
     color: white;
     max-width: 100vw;
+    overflow: hidden;
 }
 
 .style-Menu {
@@ -120,7 +121,7 @@ h2 {
 
 @keyframes targetAnim2 {
   0% {
-    visibility: hidden;
+    width: 50px;
   }
   15% {
     width: 150px;
