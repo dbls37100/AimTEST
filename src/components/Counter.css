@@ -40,7 +40,6 @@ h2 {
     height: 100px;
     width: 100px;
     left: 0;
-    background-color: #F2B7C6;
     position: relative;
     animation: redBox 7s infinite;
     margin-bottom: 80px;
@@ -51,18 +50,21 @@ h2 {
   height: 100px;
   width: 100px;
   left: 0;
-  background-color: #DD9296;
   position: relative;
   animation: redBox-1 7s infinite;
   margin-bottom: 30px;
   padding: 15px;
 }
 
+.sizeTarget {
+  height: 100px;
+  width: 100px;
+}
+
 
 .kill-zone4-1 {
   height: 100px;
   width: 100px;
-  background-color: #DD9296;
   position: relative;
   animation: redBox2-2 6s infinite;
   padding: 15px;
@@ -72,7 +74,6 @@ h2 {
 .kill-zone4 {
     height: 100px;
     width: 100px;
-    background-color: #F2B7C6;
     position: relative;
     animation: redBox2 6s infinite;
     padding: 15px;

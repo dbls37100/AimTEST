@@ -130,10 +130,10 @@ const Counter = () => {
             </div>
             <div className={!isActive ? 'displayGame' : ''}>
                 <div>
-                    <div onClick={changeClass} className={!testactive ? 'kill-zone1' : 'kill-zone1-1'}></div>
+                    <div onClick={changeClass} className={!testactive ? 'kill-zone1' : 'kill-zone1-1'}><img className="sizeTarget" src={cible} alt="cible" /></div>
                 </div>
                 <div>
-                    <div onClick={changeClass2} className={!testactive2 ? 'kill-zone4' : 'kill-zone4-1'}></div>
+                    <div onClick={changeClass2} className={!testactive2 ? 'kill-zone4' : 'kill-zone4-1'}> <img className="sizeTarget" src={cible} alt="cible" /></div>
                 </div>
                 <div className="cible-gestion">
                     <img onClick={changeClassCible1} src={cible} className={!cibleactive ? 'Displaying-target2' : 'Displaying-target'} alt="cible" />
