@@ -127,9 +127,9 @@ const Counter = () => {
                     <div onClick={changeClass2} className={!testactive2 ? 'kill-zone4' : 'kill-zone4-1'}></div>
                 </div>
             <div className="cible-gestion">
-                <img onClick={changeClassCible1} src={cible} className={!cibleactive ? '' : 'Displaying-target'} alt="cible" />
-                <img onClick={changeClassCible2} src={cible} className={!cibleactive2 ? '' : 'Displaying-target'} alt="cible" />
-                <img onClick={changeClassCible3} src={cible} className={!cibleactive3 ? '' : 'Displaying-target'} alt="cible" />
+                <img onClick={changeClassCible1} src={cible} className={!cibleactive ? 'Displaying-target2' : 'Displaying-target'} alt="cible" />
+                <img onClick={changeClassCible2} src={cible} className={!cibleactive2 ? 'Displaying-target2' : 'Displaying-target'} alt="cible" />
+                <img onClick={changeClassCible3} src={cible} className={!cibleactive3 ? 'Displaying-target2' : 'Displaying-target'} alt="cible" />
             </div>
         </div>
     )

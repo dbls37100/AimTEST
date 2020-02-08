@@ -40,7 +40,7 @@ h2 {
     background-color: #F2B7C6;
     position: relative;
     animation: redBox 7s infinite;
-    margin-bottom: 30px;
+    margin-bottom: 100px;
     padding: 15px;
 }
 
@@ -61,7 +61,7 @@ h2 {
   width: 100px;
   background-color: #DD9296;
   position: relative;
-  animation: redBox2-2 7s infinite;
+  animation: redBox2-2 6s infinite;
   padding: 15px;
 }
   
@@ -71,7 +71,7 @@ h2 {
     width: 100px;
     background-color: #F2B7C6;
     position: relative;
-    animation: redBox2 7s infinite;
+    animation: redBox2 6s infinite;
     padding: 15px;
 }
 
@@ -83,8 +83,44 @@ h2 {
 }
 
 .Displaying-target {
-  display: none;
+  margin-top: auto;
+  max-width: 100vw;
+  position: relative;
+  animation: targetAnim 4s infinite;
 }
+
+@keyframes targetAnim {
+  0% {
+    width: 30px;
+  }
+  50% {
+    width: 60px;
+  }
+  100% {
+    width: 100px;
+   }
+
+}
+
+.Displaying-target2 {
+  margin-top: auto;
+  position: relative;
+  animation: targetAnim2 4s infinite;
+}
+
+@keyframes targetAnim2 {
+  0% {
+    width: 25px;
+  }
+  50% {
+    width: 50px;
+  }
+  100% {
+    visibility: hidden;
+  }
+
+}
+
 
 @keyframes redBox {
     0% {
