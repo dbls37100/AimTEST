@@ -71,8 +71,10 @@ const Counter = () => {
     const countClick = () => {
         if (isActive) {
         setCount(count + 1);
+        window.navigator.vibrate(200);
         } else {
         setCount(count);
+        window.navigator.vibrate(200);
         }
     }
 
