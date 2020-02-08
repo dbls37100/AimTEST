@@ -59,6 +59,7 @@ h2 {
 .sizeTarget {
   height: 100px;
   width: 100px;
+  user-select: none;
 }
 
 
@@ -91,6 +92,7 @@ h2 {
   max-width: 100vw;
   position: relative;
   animation: targetAnim 4s infinite;
+  user-select: none;
 }
 
 @keyframes targetAnim {
@@ -113,6 +115,7 @@ h2 {
   margin-top: auto;
   position: relative;
   animation: targetAnim2 6s infinite;
+  user-select: none;
 }
 
 @keyframes targetAnim2 {
@@ -246,6 +249,31 @@ h2 {
 
     .targetMobile {
       display: none;
+    }
+    @keyframes targetAnim2 {
+      0% {
+        visibility: hidden;
+      }
+      15% {
+        width: 150px;
+        margin-top: 50px;
+      }
+      35% {
+        width: 50px;
+        left: 15%;
+      }
+      60% {
+        width: 180px;
+      }
+      80% {
+        width: 60px;
+        margin-top: 50px;
+      }
+      100% {
+        width: 60px;
+        margin-top: 50px;
+    
+      }
     }
   }
 
