@@ -79,6 +79,7 @@ const Counter = () => {
     
     function toggle() {
         setIsActive(!isActive);
+        window.navigator.vibrate(200);
     }
 
     
@@ -127,8 +128,8 @@ const Counter = () => {
                 </div>
                 <div className="cible-gestion">
                     <img onClick={changeClassCible1} src={cible} className={!cibleactive ? 'Displaying-target2' : 'Displaying-target'} alt="cible" />
-                    <img onClick={changeClassCible2} src={cible} className={!cibleactive2 ? 'Displaying-target2 targetMobile' : 'Displaying-target'} alt="cible" />
-                    <img onClick={changeClassCible3} src={cible} className={!cibleactive3 ? 'Displaying-target2 targetMobile' : 'Displaying-target'} alt="cible" />
+                    <img onClick={changeClassCible2} src={cible} className={!cibleactive2 ? 'Displaying-target2 targetMobile' : 'Displaying-target targetMobile'} alt="cible" />
+                    <img onClick={changeClassCible3} src={cible} className={!cibleactive3 ? 'Displaying-target2 targetMobile' : 'Displaying-target targetMobile'} alt="cible" />
                 </div>
             </div>
         </div>
