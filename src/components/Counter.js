@@ -76,7 +76,7 @@ const Counter = () => {
         if (isActive) {
         setCount(count + 1);
         window.navigator.vibrate(200);
-        shoot.setVolume(0.5).play()
+        shoot.setVolume(0.25).play()
         } else {
         setCount(count);
         window.navigator.vibrate(200);
@@ -87,7 +87,7 @@ const Counter = () => {
     function toggle() {
         setIsActive(!isActive);
         window.navigator.vibrate(200);
-        shoot.setVolume(0.5).play()
+        shoot.setVolume(0.25).play()
     }
 
     
@@ -95,7 +95,7 @@ const Counter = () => {
         setSeconds(30);
         setIsActive(false);
         setCount(0);
-        shoot.setVolume(0.5).play()
+        shoot.setVolume(0.25).play()
     }
 
 
