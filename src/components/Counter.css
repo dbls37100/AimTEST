@@ -40,7 +40,7 @@ h2 {
     background-color: #F2B7C6;
     position: relative;
     animation: redBox 7s infinite;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     padding: 15px;
 }
 
@@ -79,7 +79,7 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 100%;
+  width: 100vw;
 }
 
 .Displaying-target {
@@ -91,13 +91,13 @@ h2 {
 
 @keyframes targetAnim {
   0% {
-    width: 30px;
+    width: 35px;
   }
   50% {
-    width: 60px;
+    width: 50px;
   }
   100% {
-    width: 100px;
+    width: 60px;
    }
 
 }
@@ -110,13 +110,16 @@ h2 {
 
 @keyframes targetAnim2 {
   0% {
-    width: 25px;
+    width: 35px;
+    margin-top: 50px;
   }
   50% {
-    width: 50px;
+    width: 200px;
   }
   100% {
-    visibility: hidden;
+    width: 60px;
+    margin-top: 50px;
+
   }
 
 }
@@ -200,5 +203,31 @@ h2 {
     100% {
       left: 10%;
       visibility: visible;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    .kill-zone1 {
+      width: 50px;
+      height: 50px;
+    }
+
+    .kill-zone1-1 {
+      width: 50px;
+      height: 50px;
+    }
+
+    .kill-zone4 {
+      width: 50px;
+      height: 50px;
+    }
+
+    .kill-zone4-1 {
+      width: 50px;
+      height: 50px;
+    }
+
+    .targetMobile {
+      display: none;
     }
   }
