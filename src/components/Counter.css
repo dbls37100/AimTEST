@@ -13,6 +13,10 @@ body {
     margin-bottom: 50px;
 }
 
+.displayGame {
+  display: none;
+}
+
 .style-Menu:hover {
     background-color: #DD9296;
 }

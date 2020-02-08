@@ -55,26 +55,24 @@ const Counter = () => {
     const changeClassCible1 = () => {
         countClick();
         setClass3();
-        shoot.play()
     }
 
     const changeClassCible2 = () => {
         countClick();
         setClass4();
-        shoot.play()
     }
     
     const changeClassCible3 = () => {
         countClick();
         setClass5();
-        shoot.play()
+        shoot.setVolume(0.8).play();
     }
 
     const countClick = () => {
         if (isActive) {
-        setCount(count + 1)
+        setCount(count + 1);
         } else {
-        setCount(count)
+        setCount(count);
         }
     }
 
@@ -87,7 +85,7 @@ const Counter = () => {
     function reset() {
         setSeconds(30);
         setIsActive(false);
-        setCount(0)
+        setCount(0);
     }
 
 
@@ -120,16 +118,18 @@ const Counter = () => {
                     </h2>
                 </div>
             </div>
+            <div className={!isActive ? 'displayGame' : ''}>
                 <div>
                     <div onClick={changeClass} className={!testactive ? 'kill-zone1' : 'kill-zone1-1'}></div>
                 </div>
                 <div>
                     <div onClick={changeClass2} className={!testactive2 ? 'kill-zone4' : 'kill-zone4-1'}></div>
                 </div>
-            <div className="cible-gestion">
-                <img onClick={changeClassCible1} src={cible} className={!cibleactive ? 'Displaying-target2' : 'Displaying-target'} alt="cible" />
-                <img onClick={changeClassCible2} src={cible} className={!cibleactive2 ? 'Displaying-target2 targetMobile' : 'Displaying-target'} alt="cible" />
-                <img onClick={changeClassCible3} src={cible} className={!cibleactive3 ? 'Displaying-target2 targetMobile' : 'Displaying-target'} alt="cible" />
+                <div className="cible-gestion">
+                    <img onClick={changeClassCible1} src={cible} className={!cibleactive ? 'Displaying-target2' : 'Displaying-target'} alt="cible" />
+                    <img onClick={changeClassCible2} src={cible} className={!cibleactive2 ? 'Displaying-target2 targetMobile' : 'Displaying-target'} alt="cible" />
+                    <img onClick={changeClassCible3} src={cible} className={!cibleactive3 ? 'Displaying-target2 targetMobile' : 'Displaying-target'} alt="cible" />
+                </div>
             </div>
         </div>
     )
