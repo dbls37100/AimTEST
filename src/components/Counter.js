@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Counter.css';
 import cible from './cible.png';
 import UIfx from 'uifx';
+import shootmp3 from "./shoot.mp3"
 
 const Counter = () => {
 
@@ -14,10 +15,13 @@ const Counter = () => {
     const [ cibleactive2, setcibleactive2 ] = useState(false);
     const [ cibleactive3, setcibleactive3 ] = useState(false);
 
-    const shoot = new UIfx({
-        asset:
-          'http://s1download-universal-soundbank.com/mp3/sounds/206.mp3',
-      })
+    const shoot = new UIfx(
+        shootmp3,
+        {
+          volume: 0.4, // number between 0.0 ~ 1.0
+          throttleMs: 100
+        }
+      )
 
 
 
@@ -72,6 +76,7 @@ const Counter = () => {
         if (isActive) {
         setCount(count + 1);
         window.navigator.vibrate(200);
+        shoot.setVolume(0.5).play()
         } else {
         setCount(count);
         window.navigator.vibrate(200);
@@ -82,6 +87,7 @@ const Counter = () => {
     function toggle() {
         setIsActive(!isActive);
         window.navigator.vibrate(200);
+        shoot.setVolume(0.5).play()
     }
 
     
@@ -89,6 +95,7 @@ const Counter = () => {
         setSeconds(30);
         setIsActive(false);
         setCount(0);
+        shoot.setVolume(0.5).play()
     }
 
 
@@ -130,7 +137,7 @@ const Counter = () => {
                 </div>
                 <div className="cible-gestion">
                     <img onClick={changeClassCible1} src={cible} className={!cibleactive ? 'Displaying-target2' : 'Displaying-target'} alt="cible" />
-                    <img onClick={changeClassCible2} src={cible} className={!cibleactive2 ? 'Displaying-target2 targetMobile' : 'Displaying-target targetMobile'} alt="cible" />
+                    <img onClick={changeClassCible2} src={cible} className={!cibleactive2 ? 'Displaying-target targetMobile' : 'Displaying-target2 targetMobile'} alt="cible" />
                     <img onClick={changeClassCible3} src={cible} className={!cibleactive3 ? 'Displaying-target2 targetMobile' : 'Displaying-target targetMobile'} alt="cible" />
                 </div>
             </div>
